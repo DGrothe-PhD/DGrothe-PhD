@@ -9,6 +9,7 @@ I'm from Germany. I am currently...
 - 🔎 for a job position as a .NET dev
 - 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, and French
 - 🔧 Occasionally working in a repair café
+- 🔧 Contributing to nice projects such as ![NMF app](https://github.com/NMF-earth/nmf-app)
 - 📫 How to reach me: ![LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
 - 💬 Ask me how to...
   - structure your own SQL database
