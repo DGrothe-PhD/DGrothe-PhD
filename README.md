@@ -11,13 +11,7 @@ I'm from Germany. I am currently...
 - 🔧 Occasionally working in a repair café
 - 🔧 Contributing to nice projects such as ![NMF app](https://github.com/NMF-earth/nmf-app)
 - 📫 How to reach me: ![LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
-- 💬 Ask me how to...
-  - structure your own SQL database
-  - automate some tedious hands-on text conversion task in Notepad++ or Python
-  - get e-mails out of a client that's been out of support
-- ⚡ Fun facts:
-     - 🚴‍♀️ 🚞 No e-bike
-     - Occasionally using my first mobile phone as a travel radio
+
 
 ### Projects
 - 🔭 I’m currently working on ![Mastermind](https://github.com/DGrothe-PhD/Mastermind) and ![NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
