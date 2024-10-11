@@ -7,16 +7,19 @@ Here are some ideas to get you started:
 -->
 I'm from Germany. I am currently...
 - 🔎 for a job position as a .NET dev
-- 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, and French
-- 🔧 Occasionally working in a repair café
-- 🔧 Contributing to nice projects such as ![NMF app](https://github.com/NMF-earth/nmf-app)
+- 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, Python and French
+- 🔧 Contributing to nice projects
 - 📫 How to reach me: ![LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
 
 
 ### Projects
-- 🔭 I’m currently working on ![Mastermind](https://github.com/DGrothe-PhD/Mastermind) and ![NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
+- 👩‍💻 Helping visually impaired with reading texts
+  - Train ticket summary ![ZugFahrtPlaner](https://github.com/DGrothe-PhD/ZugFahrtPlaner)
+  - VideoText ![PyTellMe](https://github.com/DGrothe-PhD/PyTellMe)
+  - …
+- 🔭 ![Mastermind](https://github.com/DGrothe-PhD/Mastermind) and ![NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
 - 👩‍💻 Other repos of mine  ![JavaWordChecker](https://github.com/DGrothe-PhD/WordCheckerJava) and ![Python Wordchecker](https://github.com/DGrothe-PhD/Wordchecker)
-- 🌱 Next I’m going to learn TypeScript
+
 ***
 <!--
 - 👯 I’m looking to collaborate on ...
@@ -35,7 +38,6 @@ also: Mathematica, LabView, Maple; SVN, TortoiseGit, &hellip;
 - Years ago:
   - Getting e-mails out of a client that's been out of support
   - Soccer points calculation with Excel (that was before getting to know SQL)
-- Growing flowers and 🌶️ from seeds
 - Reading books off-line
 
 ***
