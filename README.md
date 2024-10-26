@@ -15,9 +15,10 @@ I'm from Germany. I am currently...
 ### Projects
 - 👩‍💻 Helping visually impaired with reading texts
   - Train ticket summary ![ZugFahrtPlaner](https://github.com/DGrothe-PhD/ZugFahrtPlaner)
-  - VideoText ![PyTellMe](https://github.com/DGrothe-PhD/PyTellMe)
+  - VideoText 👉 [PyTellMe](https://github.com/DGrothe-PhD/PyTellMe)
+  - [Learning Flutter](https://github.com/DGrothe-PhD/punktspiel/blob/main/LearningJournal.md)
   - …
-- 🔭 ![Mastermind](https://github.com/DGrothe-PhD/Mastermind) and ![NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
+- 🔭 [Mastermind](https://github.com/DGrothe-PhD/Mastermind) and ![NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
 - 👩‍💻 Other repos of mine  ![JavaWordChecker](https://github.com/DGrothe-PhD/WordCheckerJava) and ![Python Wordchecker](https://github.com/DGrothe-PhD/Wordchecker)
 
 ***
