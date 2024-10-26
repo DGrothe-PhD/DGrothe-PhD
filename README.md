@@ -9,7 +9,7 @@ I'm from Germany. I am currently...
 - 🔎 for a job position as a .NET dev
 - 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, Python and French
 - 🔧 Contributing to nice projects
-- 📫 How to reach me: ![LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
+- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
 
 
 ### Projects
@@ -18,7 +18,7 @@ I'm from Germany. I am currently...
   - VideoText 👉 [PyTellMe](https://github.com/DGrothe-PhD/PyTellMe)
   - [Learning Flutter](https://github.com/DGrothe-PhD/punktspiel/blob/main/LearningJournal.md)
   - …
-- 🔭 🧩 [Mastermind](https://github.com/DGrothe-PhD/Mastermind) and ![NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
+- 🔭 🧩 [Mastermind](https://github.com/DGrothe-PhD/Mastermind) and 📕 [NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
 - 👩‍💻 Other repos of mine 📝 [JavaWordChecker](https://github.com/DGrothe-PhD/WordCheckerJava) and ![Python Wordchecker](https://github.com/DGrothe-PhD/Wordchecker)
 
 ***
