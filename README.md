@@ -19,7 +19,7 @@ I'm from Germany. I am currently...
   - [Learning Flutter](https://github.com/DGrothe-PhD/punktspiel/blob/main/LearningJournal.md)
   - …
 - 🔭 🧩 [Mastermind](https://github.com/DGrothe-PhD/Mastermind) and 📕 [NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
-- 👩‍💻 Other repos of mine 📝 [JavaWordChecker](https://github.com/DGrothe-PhD/WordCheckerJava) and ![Python Wordchecker](https://github.com/DGrothe-PhD/Wordchecker)
+- 👩‍💻 Other repos of mine 📝 [JavaWordChecker](https://github.com/DGrothe-PhD/WordCheckerJava) and 🐍 [Python Wordchecker](https://github.com/DGrothe-PhD/Wordchecker)
 
 ***
 <!--
