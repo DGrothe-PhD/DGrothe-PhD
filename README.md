@@ -1,5 +1,4 @@
 ### Hi there 👋
-
 <!--
 **DGrothe-PhD/DGrothe-PhD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -10,6 +9,7 @@ I'm from Germany. I am currently...
 - 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, Python and French
 - 🔧 Contributing to nice projects
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
+- ![💰☕Ko-fi](https://ko-fi.com/danielagrothe)
 
 
 ### Projects
