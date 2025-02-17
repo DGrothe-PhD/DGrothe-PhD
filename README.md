@@ -9,7 +9,7 @@ I'm from Germany. I am currently...
 - 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, Python and French
 - 🔧 Contributing to nice projects
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
-- ![💰☕Ko-fi](https://ko-fi.com/danielagrothe)
+- [💰☕Ko-fi](https://ko-fi.com/danielagrothe)
 
 
 ### Projects
