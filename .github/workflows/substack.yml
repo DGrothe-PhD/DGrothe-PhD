@@ -1,0 +1,19 @@
+name: Update this repo's README
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Once a day at 8 AM
+    - cron: 0 8 * * *
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: JasonEtco/rss-to-readme@v2
+        with:
+          feed-url: https://danielagrothe.substack.com/feed
+          readme-section: substackfeed
+          empty-commits: false
+          max: 5
+          template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
