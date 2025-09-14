@@ -21,7 +21,14 @@ I'm from Germany. I am currently...
 - 🔭 🧩 [Mastermind](https://github.com/DGrothe-PhD/Mastermind) and 📕 [NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
 - 👩‍💻 Other repos of mine 📝 [JavaWordChecker](https://github.com/DGrothe-PhD/WordCheckerJava) and 🐍 [Python Wordchecker](https://github.com/DGrothe-PhD/Wordchecker)
 
+### My Substack
+
+<!--START_SECTION:substackfeed-->
+...
+<!--END_SECTION:substackfeed-->
+
 ***
+
 <!--
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
