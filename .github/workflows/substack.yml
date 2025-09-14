@@ -5,7 +5,8 @@ on:
   schedule:
     # Once a day at 8 AM
     - cron: 0 8 * * *
-
+permissions:
+  contents: write
 jobs:
   update:
     runs-on: ubuntu-latest
