@@ -23,9 +23,6 @@ I'm from Germany. I am currently...
 
 ### My Substack
 
-<!--START_SECTION:substackfeed-->
-...
-<!--END_SECTION:substackfeed-->
 
 ***
 
