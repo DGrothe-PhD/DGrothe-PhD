@@ -18,6 +18,7 @@ jobs:
           empty-commits: false
           max: 5
           template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 #        env:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
