@@ -1,4 +1,4 @@
-name: Update this repo's README
+name: Substack to README
 
 on:
   workflow_dispatch:
