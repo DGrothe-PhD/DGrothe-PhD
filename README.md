@@ -4,20 +4,29 @@
 
 Here are some ideas to get you started:
 -->
+### To write code, for me, is:
+To translate — but in a different way. Doing some magic! 🪄\
+Always looking on the bright side of life, or a user's screen — and at the dark-mode page of code, too. \
+I love this way of thinking both of the scrutiny of details and of the bigger picture traversing layer after layer of a full code stack.
+
+- ✨ From visuals from my head into text into visuals at a coworker's head.
+- ✨ From text or code into visuals in my head into fixing bugs. 💡
+- ✨ From code into life — that of a user seeing how their life can improve.
+- ✨ Thereby, I have become somebody new as well. ✨
+
+
 I'm from Germany. I am currently...
 - 🔎 for a job position as a .NET dev
 - 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, Python and French
 - 🔧 Contributing to nice projects
-- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/)
-- [💰☕Ko-fi](https://ko-fi.com/danielagrothe)
-
+- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/) ~~~ [💰☕Ko-fi](https://ko-fi.com/danielagrothe)
+- Substack.
 
 ### Projects
 - 👩‍💻 Helping visually impaired with reading texts
   - Train ticket summary [ZugFahrtPlaner](https://github.com/DGrothe-PhD/ZugFahrtPlaner)
   - VideoText 👉 [PyTellMe](https://github.com/DGrothe-PhD/PyTellMe)
 - Learning Flutter through making of [punktspiel App](https://github.com/DGrothe-PhD/punktspiel/)
-- …
 - 🔭 🧩 [Mastermind](https://github.com/DGrothe-PhD/Mastermind) and 📕 [NachhilfeDB](https://github.com/DGrothe-PhD/NachhilfeDB)
 - 👩‍💻 Other repos of mine 📝 [JavaWordChecker](https://github.com/DGrothe-PhD/WordCheckerJava) and 🐍 [Python Wordchecker](https://github.com/DGrothe-PhD/Wordchecker)
 
