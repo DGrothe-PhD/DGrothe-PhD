@@ -1,10 +1,4 @@
-### Hi there 👋
-<!--
-**DGrothe-PhD/DGrothe-PhD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
--->
-### To write code, for me, is:
+### Hi there 👋 To write code, for me, is:
 To translate — but in a different way. Doing some magic! 🪄\
 Always looking on the bright side of life, or a user's screen — and at the dark-mode page of code, too. \
 I love this way of thinking both of the scrutiny of details and of the bigger picture traversing layer after layer of a full code stack.
@@ -14,13 +8,14 @@ I love this way of thinking both of the scrutiny of details and of the bigger pi
 - ✨ From code into life — that of a user seeing how their life can improve.
 - ✨ Thereby, I have become somebody new as well. ✨
 
+People also know me as 📙 [**The Fluttering Dev that can C#**](https://danielagrothe.substack.com/) on Substack.
 
+### The boring stuff: How to reach me etc.
 I'm from Germany. I am currently...
 - 🔎 for a job position as a .NET dev
 - 👩‍🏫 Part-time private-lessons teacher for 📐Math, English, Python and French
 - 🔧 Contributing to nice projects
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/daniela-grothe-743ab8235/) ~~~ [💰☕Ko-fi](https://ko-fi.com/danielagrothe)
-- Substack.
 
 ### Projects
 - 👩‍💻 Helping visually impaired with reading texts
