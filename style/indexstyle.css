@@ -34,9 +34,9 @@ body {
 header {
       background: var(--accent);
       color: white;
-      padding: 1rem;
+      padding: 0.75rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
 }
@@ -49,9 +49,15 @@ header {
   padding: 0.5em;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
+#theme-toggle .icon {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.75;
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:active .icon {
+  transform: rotate(20deg);
 }
 
 .hidden {
