@@ -32,14 +32,18 @@ body {
 }
 
 header {
-      background: var(--accent);
-      color: white;
-      padding: 0.75rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+  background: var(--accent);
+  color: white;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url('./assets/images/wood.png');
+  background-size: cover;
+  background-position: center;
 }
+
 
 /* Dark mode icon adjustment */
 #theme-toggle {
