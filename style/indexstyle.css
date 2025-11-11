@@ -39,7 +39,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url('./assets/images/wood.png');
+  background-image: url('../assets/images/wood.png');
   background-size: cover;
   background-position: center;
 }
