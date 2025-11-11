@@ -1,49 +1,61 @@
 :root {
-      --accent: #e67e22;
-      --bg: #fafafa;
-      --fg: #222;
-      --link: #e67e22;
-      --border: #ddd;
-    }
-
-body.dark-mode {
-      --bg: #121212;
-      --fg: #f0f0f0;
-      --link: #f39c12;
-      --border: #333;
+  --accent: #e67e22;
+  --bg: #fafafa;
+  --fg: #197b24;
+  --link: #e65e12;
+  --border: #ddd;
 }
 
 @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #121212;
-        --fg: #f0f0f0;
-        --link: #f39c12;
-        --border: #333;
-      }
+  :root {
+    --bg: #121212;
+    --fg: #197b24;
+    --link: maroon;
+    --border: #333;
+  }
 }
 
 body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
-      transition: background-color 0.3s, color 0.3s;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --fg: #197b24;
+  --link: maroon;
+  --border: #333;
 }
 
 header {
-  background: var(--accent);
-  color: white;
+  /*background: var(--accent);*/
+  color: #222;
   padding: 0.75rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url('../assets/images/wood.png');
+  background-image: 
+    linear-gradient(rgba(187, 42, 0, 0), rgba(187, 42, 0, 0.17)),
+    url('../assets/images/wood.png');
   background-size: cover;
   background-position: center;
 }
 
+header.dark-mode {
+  color: white;
+  background-image: 
+    linear-gradient(rgba(187, 42, 0, 0), rgba(187, 42, 0, 0.17)),
+    url('../assets/images/wood.png');
+}
+
+header.dark-mode nav a {
+  color: white;
+}
 
 /* Dark mode icon adjustment */
 #theme-toggle {
@@ -53,9 +65,18 @@ header {
   padding: 0.5em;
 }
 
+/* header's dark mode class applied to inner id */
+header.dark-mode #theme-toggle {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
 #theme-toggle .icon {
-  width: 28px;
-  height: 28px;
+  width: 42px;
+  height: 42px;
   stroke-width: 1.75;
   transition: transform 0.3s ease;
 }
@@ -64,62 +85,85 @@ header {
   transform: rotate(20deg);
 }
 
+
 .hidden {
   display: none;
 }
 
 header h1 {
-      margin: 0;
-      font-size: 1.5rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 nav a {
-      color: white;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: bold;
+  color: #222;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
+/*nav a.dark-mode {
+  color: red;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}*/
+
 nav a:hover {
-      text-decoration: underline;
+  text-decoration: underline;
 }
 
 main {
-      padding: 1rem;
+  padding: 1rem;
 }
 
 main a {
-      color: var(--link);
-      font-weight: bold;
+  color: var(--link);
+  font-weight: bold;
 }
 
 iframe {
-      width: 100%;
-      height: 80vh;
-      border: 1px solid var(--border);
-      border-radius: 8px;
+  width: 100%;
+  height: 80vh;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #888;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
 }
 
 /* Mobile Menü */
 @media (max-width: 600px) {
-      nav {
-        margin-top: 0.5rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-      }
-      nav a {
-        margin: 0;
-      }
-    }
+  nav {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav a {
+    margin: 0;
+  }
+}
 
-    .date{
-      color: #888;
-    }
+.date{
+  color: #888;
+  font-style: italic;
+}
+
+.card{
+  border: 2px solid #888;
+  border-radius:17px;
+  padding-left: 1em;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0), rgba(42, 42, 42, 0), rgba(42, 42, 42, 0.17));
+}
+
+body.dark-mode main div {
+  background-image: 
+    linear-gradient(rgba(187, 42, 0, 0), rgba(42, 42, 42, 0.27), rgba(42, 42, 42, 0.27));
+    /*,    url('../assets/images/wood.png');*/
+}
