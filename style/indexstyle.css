@@ -165,14 +165,16 @@ footer {
 .flex-parent {
     display: flex;
     padding: 20px;
+    gap: 1rem;
 }
 
 .flex-child {
-    flex: 1;
+    flex: 1 1 auto;
     padding: 20px;
 }
 
 .non-flex {
+  flex: 0 0 20%;
   margin-left: auto;
   padding: 10px 0;
 }
