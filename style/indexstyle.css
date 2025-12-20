@@ -172,6 +172,11 @@ footer {
     padding: 20px;
 }
 
+.non-flex {
+  margin-left: auto;
+  padding: 10px 0;
+}
+
 body.dark-mode main div {
   background-image: 
     linear-gradient(rgba(187, 42, 0, 0), rgba(42, 42, 42, 0.27), rgba(42, 42, 42, 0.27));
