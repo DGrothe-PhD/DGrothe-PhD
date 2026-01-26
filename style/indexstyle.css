@@ -115,6 +115,20 @@ nav a:hover {
 
 main {
   padding: 1rem;
+  /*background-image: 
+    url('../assets/images/summer_background.jpg');*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.dark-mode main {
+  padding: 1rem;
+  background-image: 
+    url('../assets/images/summer_background_dark.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 main a {
