@@ -9,8 +9,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #121212;
-    --fg: #197b24;
-    --link: maroon;
+    --fg: #72ae32;
+    --link: Tomato;
     --border: #333;
   }
 }
@@ -26,8 +26,8 @@ body {
 
 body.dark-mode {
   --bg: #121212;
-  --fg: #197b24;
-  --link: maroon;
+  --fg: #72ae32;
+  --link: Tomato;
   --border: #333;
 }
 
