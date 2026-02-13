@@ -185,6 +185,10 @@ footer {
   .flex-parent {
     flex-direction: column;
   }
+  
+  .card {
+    width: 100%;
+  }
 
   .flex-child {
     flex: 0 0 100%;
