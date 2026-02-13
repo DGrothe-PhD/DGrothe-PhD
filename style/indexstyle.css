@@ -180,8 +180,11 @@ footer {
 
 @media (max-width: 768px) {
   body {
-    font-size: 2em;
+    font-size: 1.8em;
   }
+}
+
+@media (orientation: portrait) {
   .flex-parent {
     flex-direction: column;
   }
@@ -246,7 +249,7 @@ body.dark-mode main div {
 
 .kofi-button {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 1rem 2rem;
   background-color: var(--accent);
   color: white;
   text-decoration: none;
