@@ -160,15 +160,15 @@ footer {
 
 .flex-parent {
   display: flex;
-  padding: 20px;
+  /*padding: 20px;*/
   margin-right: 3rem;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .flex-child {
   flex: 1 1 250px;
-  padding: 20px;
+  padding: 10px;
 }
 /* If needed to fit more text in*/
 /*
@@ -179,7 +179,9 @@ footer {
 }*/
 
 @media (max-width: 768px) {
-  font-size:2em;
+  body {
+    font-size: 2em;
+  }
   .flex-parent {
     flex-direction: column;
   }
@@ -187,6 +189,10 @@ footer {
   .flex-child {
     flex: 0 0 100%;
     width: 100%;
+  }
+
+  .thumbnail{
+    max-width: 33vh;
   }
 
   iframe {
@@ -201,11 +207,30 @@ footer {
 
 .card{
   border: 2px solid #888;
-  border-radius:17px;
-  width:30%;
+  border-radius: 17px;
+  width: 30%;
+  max-width: 450px;
   padding-left: 1em;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0), rgba(42, 42, 42, 0), rgba(42, 42, 42, 0.17));
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.thumbnail{
+  /*max-width: 150px;*/
+  border: 1.5px solid #888;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.thumbnail img{
+  width: 100%;
 }
 
 
