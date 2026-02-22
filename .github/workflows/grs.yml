@@ -10,13 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Generate stats card
+      
+      - name: Generate stats card (light)
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&bg_color=FEDB80&text_color=002b36&icon_color=586e75
-          path: profile/stats.svg
+          path: profile/stats-light.svg
+          options: username=${{ github.repository_owner }}&show_icons=true&bg_color=FEDB80
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate stats card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          path: profile/stats-dark.svg
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&bg_color=0d1117
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
