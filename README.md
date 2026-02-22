@@ -39,8 +39,16 @@ I'm from Germany. I am currently...
 
 also: Mathematica, LabView, Maple; SVN, TortoiseGit, &hellip;
 
-![My GitHub Stats](./profile/stats.svg)
+<picture>
+  <source
+    srcset="profile/stats-dark.svg"
+    media="(prefers-color-scheme: dark)">
+  <img
+    src="profile/stats-light.svg"
+    alt="GitHub Stats">
+</picture>
 
+<!--![My GitHub Stats](./profile/stats.svg)-->
 <!--![My GitHub stats](https://github-readme-stats.vercel.app/api?username=DGrothe-PhD&show_icons=true&theme=solarized-dark)-->
 
 
