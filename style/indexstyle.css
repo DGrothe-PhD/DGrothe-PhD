@@ -57,6 +57,11 @@ header.dark-mode nav a {
   color: white;
 }
 
+details {
+  font-family: system-ui, sans-serif;
+  color: #197b24;
+}
+
 /* Dark mode icon adjustment */
 #theme-toggle {
   background: none;
