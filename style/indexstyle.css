@@ -240,12 +240,15 @@ footer {
   /*max-width: 150px;*/
   border: 1.5px solid #888;
   border-radius: 8px;
-  padding: 0;
+  padding: 0.2em;
   margin: 0;
 }
 
 .thumbnail img{
-  width: 100%;
+  border: 1.5px solid #888;
+  border-radius: 11px;
+  width: 98%;
+  height: 15vh;
   display: block;
 }
 
@@ -253,7 +256,6 @@ footer {
 body.dark-mode main div {
   background-image: 
     linear-gradient(rgba(187, 42, 0, 0), rgba(42, 42, 42, 0.27), rgba(42, 42, 42, 0.27));
-    /*,    url('../assets/images/wood.png');*/
 }
 
 .kofi-button {
