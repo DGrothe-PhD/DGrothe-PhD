@@ -1,6 +1,6 @@
 :root {
-  --accent: #e67e22;
-  /*--bg: #fafafa;*/
+  --darkmodegreentext: #72ae32;
+  --accent: #e63e22;
   --fg: #197b24;
   --link: #e65e12;
   --border: #ddd;
@@ -8,8 +8,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-   /* --bg: #121212;*/
-    --fg: #72ae32;
+    --fg: var(--darkmodegreentext);
     --link: Tomato;
     --border: #333;
   }
@@ -25,8 +24,7 @@ body {
 }
 
 body.dark-mode {
-  /*--bg: #121212;*/
-  --fg: #72ae32;
+  --fg: var(--darkmodegreentext);
   --link: Tomato;
   --border: #333;
 }
@@ -102,6 +100,10 @@ a {
   font-style: italic;
 }
 
+summary{
+  color: var(--accent);
+  font-weight: bold;
+}
 
 .grid{
   display: grid;

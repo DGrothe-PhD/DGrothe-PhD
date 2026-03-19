@@ -1,5 +1,5 @@
 :root {
-  --accent: #e67e22;
+  --accent: #e63e22;
   --bg: #fafafa;
   --fg: #197b24;
   --link: #e65e12;
@@ -125,7 +125,7 @@ body.dark-mode main {
 }
 
 main a {
-  color: var(--link);
+  color: var(--accent);
   font-weight: bold;
 }
 
