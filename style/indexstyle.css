@@ -6,8 +6,10 @@
   --border: #ddd;
 }
 
-@view-transition {
-  navigation: auto;
+@supports (view-transition-name: none) {
+  @view-transition {
+    navigation: auto;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -193,6 +195,7 @@ footer {
   width: 30%;
   max-width: 450px;
   padding-left: 1em;
+  padding-right: 1em;
   background-color: transparent;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0), rgba(42, 42, 42, 0), rgba(42, 42, 42, 0.17));
@@ -236,7 +239,7 @@ footer {
 
 .grid{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
 }
 
@@ -253,7 +256,7 @@ footer {
   border-radius: 11px;
   width: 98%;
   height: 15vh;
-  display: block;
+  display: inline-block;
 }
 
 
