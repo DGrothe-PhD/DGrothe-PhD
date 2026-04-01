@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       
       - name: Generate stats card (light)
         uses: readme-tools/github-readme-stats-action@v1
@@ -26,6 +26,10 @@ jobs:
           path: profile/stats-dark.svg
           options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&bg_color=0d1117
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Make dark card background transparent
+        run: |
+          sed -i 's/fill="#0d1117"/fill="none"/g; s/fill="rgb(13,17,23)"/fill="none"/g' profile/stats-dark.svg
 
       - name: Commit cards
         run: |
