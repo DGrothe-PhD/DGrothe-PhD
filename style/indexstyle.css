@@ -6,6 +6,10 @@
   --border: #ddd;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @supports (view-transition-name: none) {
   @view-transition {
     navigation: auto;
@@ -24,10 +28,12 @@
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
+  /*padding: 0.5rem;*/
   background: var(--bg);
   color: var(--fg);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden; /* verhindert horizontales Scrollen */
 }
 
 body.dark-mode {
@@ -139,6 +145,7 @@ iframe {
   background-color: transparent;
   width: 100%;
   height: 80vh;
+  padding: 0.5rem;
   border: 1px solid var(--border);
   border-radius: 8px;
 }
@@ -170,7 +177,7 @@ footer {
 
 .flex-parent {
   display: flex;
-  /*padding: 20px;*/
+  padding: 20px;
   margin-right: 3rem;
   gap: 2rem;
   flex-wrap: wrap;
@@ -178,7 +185,7 @@ footer {
 
 .flex-child {
   flex: 1 1 250px;
-  padding: 10px;
+  /*padding: 10px;*/
   justify-content: space-between;
 }
 /* If needed to fit more text in*/

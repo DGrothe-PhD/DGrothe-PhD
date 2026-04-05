@@ -6,6 +6,10 @@
   --border: #ddd;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --fg: var(--darkmodegreentext);
@@ -70,12 +74,13 @@ a {
   width: 30%;
   max-width: 450px;
   padding-left: 1em;
+  padding-right: 1em;
   background-color: transparent;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0), rgba(42, 42, 42, 0), rgba(42, 42, 42, 0.17));
 }
 
-@media (orientation: portrait) {
+@media (max-width: 600px) {
   .flex-parent {
     flex-direction: column;
   }
@@ -89,8 +94,8 @@ a {
     width: 100%;
   }
 
-  .thumbnail{
-    max-width: 33vw;
+  .thumbnail {
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -142,22 +147,30 @@ summary{
 }
 
 .grid{
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .thumbnail{
   /*max-width: 150px;*/
+  width: 100%;
   border: 1.5px solid #888;
   border-radius: 8px;
-  padding: 0;
+  padding: 0.2em;
   margin: 0;
 }
 
 .thumbnail img{
-  width: 100%;
-  display: block;
+  border: 1.5px solid #888;
+  border-radius: 11px;
+  width: 98%;
+  height: 15vh;
+  display: inline-block;
 }
 
 
