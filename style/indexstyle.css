@@ -109,7 +109,7 @@ header h1 {
 
 nav a {
   color: #222;
-  margin-left: 1rem;
+  margin-inline: 0.5rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -201,8 +201,7 @@ footer {
   border-radius: 17px;
   width: 30%;
   max-width: 450px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-inline: 1em;
   background-color: transparent;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0), rgba(42, 42, 42, 0), rgba(42, 42, 42, 0.17));

@@ -73,8 +73,7 @@ a {
   border-radius: 17px;
   width: 30%;
   max-width: 450px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-inline: 1em;
   background-color: transparent;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0), rgba(42, 42, 42, 0), rgba(42, 42, 42, 0.17));
