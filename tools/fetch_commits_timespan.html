@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content=":)" />
+  <meta name="keywords" content="just a tool" />
+  <title>My Page</title>
+  <link rel="stylesheet" href="../style/indexstyle.css">
+<style>
+  .wrap { padding: 1.5rem 0; max-width: 560px; }
+  .row { display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+  .field { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 120px; }
+  label { font-size: 13px; color: var(--color-text-secondary); }
+  .result-card { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1.5rem; text-align: center; margin-top: 1rem; }
+  .big-num { font-size: 48px; font-weight: 500; color: var(--color-text-primary); line-height: 1; }
+  .sub { font-size: 14px; color: var(--color-text-secondary); margin-top: 8px; }
+  .error { color: var(--color-text-danger); font-size: 14px; margin-top: 8px; }
+  .code-box { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem 1rem; font-family: var(--font-mono); font-size: 12px; color: var(--color-text-secondary); margin-top: 1rem; word-break: break-all; }
+  .spinner { display: inline-block; width: 24px; height: 24px; border: 2px solid var(--color-border-tertiary); border-top-color: var(--color-text-primary); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Dr. Daniela Grothe
+<!--aka <i>The Fluttering &hellip;</i>--> 📗</h1>
+  <nav>
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79z"></path>
+  </svg>
+</button>
+      <a href="https://danielagrothe.substack.com/">Startseite</a>
+      <a href="https://danielagrothe.substack.com/archive">Archiv</a>
+      <a href="https://github.com/DGrothe-PhD">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <h1>My projects 📗</h1>
+    <p></p>
+<div class="wrap">
+  <h2 class="sr-only">GitHub Commit Counter — zählt Commits eines Users per GitHub API</h2>
+  <div class="row">
+    <div class="field">
+      <label for="user">GitHub-Username</label>
+      <input id="user" type="text" value="DGrothe-PhD" placeholder="username" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="field">
+      <label for="from">Von</label>
+      <input id="from" type="date" value="2026-05-01" />
+    </div>
+    <div class="field">
+      <label for="to">Bis</label>
+      <input id="to" type="date" value="2026-05-18" />
+    </div>
+  </div>
+  <button id="btn" onclick="fetchCommits()">Commits zählen ↗</button>
+  <div id="result"></div>
+  <div id="api-url" class="code-box" style="display:none"></div>
+</div>
+  </main>
+  <footer>
+    &copy; 2025 – Meine Substack & GitHub Seite
+  </footer>
+<script>
+async function fetchCommits() {
+  const user = document.getElementById('user').value.trim();
+  const from = document.getElementById('from').value;
+  const to = document.getElementById('to').value;
+  const resultEl = document.getElementById('result');
+  const urlEl = document.getElementById('api-url');
+
+  if (!user || !from || !to) {
+    resultEl.innerHTML = '<p class="error">Bitte alle Felder ausfüllen.</p>';
+    return;
+  }
+
+  const url = `https://api.github.com/search/commits?q=author:${encodeURIComponent(user)}+committer-date:${from}..${to}&per_page=100`;
+  urlEl.textContent = url;
+  urlEl.style.display = 'block';
+  resultEl.innerHTML = '<div class="result-card"><div class="spinner"></div></div>';
+
+  try {
+    const res = await fetch(url, {
+      headers: { 'Accept': 'application/vnd.github.cloak-preview' }
+    });
+
+    if (res.status === 422) {
+      resultEl.innerHTML = '<div class="result-card"><p class="error">Ungültige Anfrage (422). Username existiert evtl. nicht.</p></div>';
+      return;
+    }
+    if (res.status === 403) {
+      resultEl.innerHTML = '<div class="result-card"><p class="error">Rate limit erreicht (403). Kurz warten und erneut versuchen.</p></div>';
+      return;
+    }
+
+    const data = await res.json();
+    if (data.total_count === undefined) throw new Error('Unerwartete Antwort');
+
+    resultEl.innerHTML = `
+      <div class="result-card">
+        <div class="big-num">${data.total_count.toLocaleString('de-DE')}</div>
+        <div class="sub">Commits von <strong>${user}</strong><br>${from} bis ${to}</div>
+        ${data.incomplete_results
+          ? '<div class="error" style="margin-top:8px;">⚠ Ergebnisse möglicherweise unvollständig</div>'
+          : ''}
+      </div>`;
+  } catch(e) {
+    resultEl.innerHTML = `<div class="result-card"><p class="error">Fehler: ${e.message}</p></div>`;
+  }
+}
+</script>
+  <script src="./theme-toggle.js"></script>
+</body>
+</html>
