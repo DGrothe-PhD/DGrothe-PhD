@@ -3,7 +3,11 @@
   --accent: #e63e22;
   --fg: #197b24;
   --link: #e65e12;
+  --hint: rgba(97, 42, 42, 0.17);
   --border: #ddd;
+  scrollbar-color: var(--darkmodegreentext) var(--hint);
+  scrollbar-width: thin;
+  scrollbar-gutter:stable;
 }
 
 *, *::before, *::after {
@@ -13,6 +17,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --fg: var(--darkmodegreentext);
+    --hint: rgba(150, 120, 120, 0.3);
     --link: Tomato;
     --border: #333;
   }
@@ -31,6 +36,10 @@ body.dark-mode {
   --fg: var(--darkmodegreentext);
   --link: Tomato;
   --border: #333;
+}
+
+html.dark-mode {
+  --hint: rgba(150, 120, 120, 0.3);
 }
 
 .hidden {
